@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   context: path.join(__dirname, 'src'),
   entry: {
-    app: './index'
+    app: './index.jsx'
   },
 
   output: {
@@ -23,11 +23,7 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-          options: {
-              plugins: ["transform-react-jsx"],
-              presets: ['env']
-          }
+          loader: 'babel-loader'
         }
       },
       {

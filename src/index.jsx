@@ -10,6 +10,6 @@ const render = () => {
     </BrowserRouter>,
     document.getElementById('app')
   );
-}
+};
 
 render();
