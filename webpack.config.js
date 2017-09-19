@@ -27,7 +27,7 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           'style-loader',
           {
@@ -37,6 +37,9 @@ module.exports = {
               camelCase: true,
               localIdentName: '[path][name]__[local]--[hash:base64:5]'
             },
+          },
+          {
+            loader: "sass-loader"
           }
         ]
       }
