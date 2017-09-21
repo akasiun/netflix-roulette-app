@@ -1,10 +1,14 @@
 import React from 'react';
-import Hello from './components/Hello';
+import MainPage from './pages/MainPage';
+
+import styles from './shared/styles/App.scss';
 
 class App extends React.Component {
   render() {
     return (
-      <Hello />
+      <div className={styles.app}>
+        <MainPage />
+      </div>
     );
   }
 }
